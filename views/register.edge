@@ -1,0 +1,49 @@
+@layout('layouts.app')
+
+
+
+
+@section('content')
+<div class="container mt-5">
+    <div>
+        <div class="col-md-12">
+          @if(errors.length > 0)
+            <ul class="list-group">
+              @each(error in errors)
+                <li class="list-group-item text-danger">
+                  {{error}}
+                </li>
+              @endeach
+            </ul>
+          @endif
+            <form action="/users/register" method="POST" enctype="multipart/form-data">
+                <div class="mb-3 mx-3">
+                    <label class="form-label text-light">Username</label>
+                    <input type="text" value="{{data.username || ''}}" class="form-control"  placeholder="username..." name="username">  
+                    
+                  </div>
+                <div class="mb-3">
+                  <label class="form-label text-light mx-3">Email</label>
+                  <input type="email" value="{{data.email || ''}}" class="form-control d-inline-block"  placeholder="Email..." name="email">
+                  
+                </div>
+                <div class="mb-3">
+                  <label class="form-label text-light">Password</label>
+                  <input type="password" placeholder="Password.." class="form-control d-block mx-2" name="password">
+                </div>
+               
+
+                
+
+                <div class="form-group text-center mt-5 mx-5">
+                    <button class="btn btn-primary d-block mx-5">Register now</button>
+                </div>
+              </form>
+        </div>
+    </div>
+</div>
+    
+
+   
+
+@endsection

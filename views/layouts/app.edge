@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <!-- Mirrored from technext.github.io/massively/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Oct 2022 14:26:27 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <link rel="icon" type="image/x-icon" href="/public/smartrove.jpg">
+    <title>Smartrove Blogs</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+
+    @!section('styles')
+  </head>
+  <body class="is-loading">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+      <!-- Intro -->
+      <div id="intro">
+        <h1>
+          This is<br />
+          Smartrove Designs Blog
+        </h1>
+        <ul class="actions">
+          <li>
+            <a href="#header" class="button icon solo fa-arrow-down scrolly"
+              >Continue</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Header -->
+      <header id="header">
+        <a href="/" class="logo">Smartrove</a>
+      </header>
+
+      <!-- Nav -->
+     
+        
+      
+      <nav id="nav">
+        <ul class="links">
+          <li class="active"><a href="/">This is Smartrove</a></li>
+          <li><a href="/elements">Elements Reference</a></li>
+          <li><a href="/posts/new">New Post</a></li>
+          @if(!auth)
+          <li><a href="/auth/register">Register</a></li>
+          <li><a href="/auth/login">Login</a></li>
+          @else
+
+          <li><a href="/auth/logout">Logout</a></li>
+
+          @endif
+
+        </ul>
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon fa-facebook"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      @!section('content')
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section>
+          <form method="post" action="#">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="3"></textarea>
+            </div>
+            <ul class="actions">
+              <li><input type="submit" value="Send Message" /></li>
+            </ul>
+          </form>
+        </section>
+        <section class="split contact">
+          <section class="alt">
+            <h3>Address</h3>
+            <p>
+              123 Lagos<br />
+              Nigeria
+            </p>
+          </section>
+          <section>
+            <h3>Phone</h3>
+            <p><a href="#">+2348168800815</a></p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p><a href="#">olaokunolalekan@gmail.com</a></p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a href="#" class="icon alt fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon alt fa-facebook"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon alt fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon alt fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>&copy; Smartrove Designs</li>
+          <li>All Right Reserved</li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/skel.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+
+    @!section('scripts')
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+
+  <!-- Mirrored from technext.github.io/massively/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Oct 2022 14:26:34 GMT -->
+</html>

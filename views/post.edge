@@ -1,0 +1,41 @@
+@layout('layouts.app')
+
+
+
+
+@section('content')
+
+
+    <!-- Posts -->
+    <section class="posts">
+        <article class="text-light" style="margin-left: 40px; margin-right: 40px">
+          <header>
+            <h2>
+              <a href="#"
+                 class="text-light"></a
+              >
+            </h2>
+          </header>
+         
+          {{post.title}}
+
+          <h2 class="post-subheading" style="margin-bottom: -10px; margin-top: 10px">{{post-subtitle}}</h2>
+          
+          <p>{{post.content}}</p>
+          
+          <a href="#" class="image fit text-light"
+          ><img src="" alt=""
+        />Posted by: {{post.author.username}}</a>
+          <span class="date">{{post.createdAt.toDateString()}}</span>
+
+        </article>
+  
+        <br>
+  
+  
+      </section>
+
+
+
+@endsection
+
